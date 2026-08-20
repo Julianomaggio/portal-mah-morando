@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex,nofollow">
+  <title>Acesso | Portal Mah Morando</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="login-page">
+  <main class="login-card">
+    <div class="brand-text">
+      <small>PORTAL</small>
+      <strong>MAH <em>MORANDO</em></strong>
+    </div>
+    <h1>Acesso ao portal</h1>
+    <p>Área reservada para administradores, editores e colunistas autorizados.</p>
+    <form id="accessForm">
+      <label for="email">E-mail</label>
+      <input id="email" name="email" type="email" autocomplete="username" required>
+      <label for="password">Senha</label>
+      <input id="password" name="password" type="password" autocomplete="current-password" required>
+      <button type="submit">ENTRAR</button>
+    </form>
+    <div class="system-note">A interface de acesso já está preparada, mas a autenticação segura será conectada a um serviço de backend antes da liberação de contas reais.</div>
+    <a class="back-link" href="index.html">← Voltar ao portal</a>
+  </main>
+  <script src="app-config.js"></script>
+  <script>
+    document.getElementById('accessForm').addEventListener('submit', (event) => {
+      event.preventDefault();
+      const provider = window.PORTAL_CONFIG?.authProvider;
+      if (!provider) {
+        alert('O acesso seguro está em fase de configuração. Nenhuma senha é enviada ou armazenada nesta versão.');
+        return;
+      }
+    });
+  </script>
+</body>
+</html>
