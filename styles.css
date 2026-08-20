@@ -76,3 +76,22 @@ body{background:var(--paper);color:var(--ink)}
 @media(max-width:1100px){.brand-row{grid-template-columns:1fr 250px}.brand-message{display:none}.hero{grid-template-columns:minmax(0,1.55fr) minmax(280px,.75fr)}.social-rail{grid-column:1/-1;grid-template-columns:repeat(3,1fr)}.news-grid{grid-template-columns:repeat(2,1fr)}.columnists{grid-template-columns:repeat(3,1fr)}}
 @media(max-width:760px){.brand-row{min-height:150px;grid-template-columns:1fr 145px;gap:0}.brand{height:150px}.brand-logo{width:350px;top:-43px;left:-10px}.brand-person{height:150px}.brand-person img{width:145px;height:150px;margin:0;border-radius:80px 80px 0 0}.hero{grid-template-columns:1fr}.lead-story{min-height:500px}.highlight-column{padding:16px;background:#fff}.social-rail{grid-template-columns:1fr}.news-grid,.columnists{grid-template-columns:1fr 1fr}.lead-content{width:82%}}
 @media(max-width:520px){.brand-row{min-height:112px;grid-template-columns:1fr 105px}.brand{height:112px}.brand-logo{width:265px;top:-30px}.brand-person{height:112px}.brand-person img{width:108px;height:112px}.lead-story{min-height:460px}.lead-person{object-position:62% center}.lead-content{left:22px;bottom:24px;width:88%}.lead-content h1{font-size:34px}.news-grid,.columnists{grid-template-columns:1fr}.social-rail{display:grid}}
+
+/* Cabeçalho clean e identidade clara */
+body{background:#faf9f6;color:#171717}
+.topbar{background:#f3efe6;color:#805f1e;border-bottom:1px solid #e4dccd}.top-actions a,.top-search{color:#805f1e}
+.brand-area{background:#fff;border-bottom:1px solid #ebe6dc}
+.brand-row{display:flex;min-height:230px;justify-content:center;align-items:center;padding:0}
+.brand{width:min(780px,92vw);height:220px;margin:auto;overflow:hidden}
+.brand-logo{width:100%;height:auto;left:0;top:-4px;transform:none;filter:none;object-fit:contain}
+.brand-person,.brand-message{display:none}
+.nav{background:#fff;border-top:0;border-bottom:1px solid #ddd7cb}.nav-links a{color:#262626}.nav-links a:hover,.nav-links a:focus-visible{color:#aa781d;border-color:#d3a548}
+.menu-button{color:#262626}
+.hero{background:transparent}
+.highlight-column{background:#fff;border:1px solid #ebe5da;padding:18px}.title-row{border-left-color:#d3a548}
+.follow-card,.rail-newsletter,.rail-ad{box-shadow:0 8px 24px rgba(70,55,30,.06)}
+.follow-card h2{background:#f0e9dc;color:#4a3b20}.social-buttons b{background:#b9892c}
+.rail-ad{background:#f1ece2;color:#2d261b}.rail-ad small{color:#88785d}.rail-ad strong em{color:#b47d16}.rail-ad a{background:#b9892c}
+.ad{background:#f1ede5}.black-section,.videos{background:#f1eee8;color:#191919}.section-header.light{border-color:#d4cec3}.section-header.light h2{border-color:#c59026}.section-header.light a{color:#8c6417}.feature-big{background:linear-gradient(120deg,#eee8dc,#d7bd87);color:#181818}.feature-big p{color:#514b42}.feature-side article{background:#fff;color:#181818}.video-card{background:linear-gradient(135deg,#d9cfbc,#b28a43);color:#181818}.v2{background:linear-gradient(135deg,#eeeae2,#c8bba2)}.v3{background:linear-gradient(135deg,#e7d8ba,#bf9450)}.video-card button{background:#fff;color:#9b6c14}.newsletter{background:#d7b05f}.footer-grid b{color:#c39740}footer{background:#28241e}.footer-brand img{background:#fff;border-radius:4px}
+@media(max-width:760px){.brand-row{min-height:166px;display:flex}.brand{width:min(560px,96vw);height:160px}.brand-logo{width:100%;top:0}.nav{background:#fff}}
+@media(max-width:520px){.brand-row{min-height:124px;display:flex}.brand{width:98vw;height:120px}.brand-logo{width:100%;top:0}.topbar{background:#f3efe6}}
